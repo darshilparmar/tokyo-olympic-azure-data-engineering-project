@@ -7,9 +7,9 @@ terraform {
     }
   }
   cloud {
-    organization = "CloudQuickLabs"
+    organization = "AzureDatabricks"
     workspaces {
-      name = "AzureLabs"
+      name = "azure-databricks"
     }
   }
 }

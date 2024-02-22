@@ -13,6 +13,6 @@ resource "azurerm_storage_account" "StorageAccountDemo" {
 
   tags = {
     video = "azure"
-    channel = "CloudQuickLabs"
+    channel = "AzureDatafactory"
   }
 }

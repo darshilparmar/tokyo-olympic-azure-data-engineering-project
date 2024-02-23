@@ -32,6 +32,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   location = var.location
 }
 
+##
 resource "azurerm_databricks_workspace" "myworkspace" {
   location                      = azurerm_resource_group.myresourcegroup.location
   name                          = "${var.prefix}-workspace"

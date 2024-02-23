@@ -65,7 +65,7 @@ resource "databricks_cluster" "shared_autoscaling" {
     }
   library {
     pypi {
-        package = "fbprophet==0.6"
+        package = "fbprophet==1.1.2"
         }
   }
   custom_tags = {

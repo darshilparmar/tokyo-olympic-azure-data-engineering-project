@@ -3,7 +3,7 @@ name: "Terraform-Plan-Infra-Plan"
 on:
   push:
     branches:
-      - FeatureBranch1
+      - Haritha-2023-patch-1
 
 jobs:
   terraform:

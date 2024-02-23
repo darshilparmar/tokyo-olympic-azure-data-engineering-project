@@ -39,14 +39,6 @@ resource "azurerm_databricks_workspace" "myworkspace" {
   sku                           = "trial"
 }
 
-resource "databricks_scim_user" "admin" {
-  user_name    = "admin@example.com"
-  display_name = "Admin user"
-  set_admin    = true
-  default_roles = []
-}
-
-
 resource "databricks_cluster" "shared_autoscaling" {
   cluster_name            = "${var.prefix}-Autoscaling-Cluster"
   spark_version           = var.spark_version
@@ -63,13 +55,19 @@ resource "databricks_cluster" "shared_autoscaling" {
         }
 
     }
-  library {
-    pypi {
-        package = "fbprophet==1.1.2"
-        }
-  }
+  
   custom_tags = {
     Department = "Engineering"
   }
 }
+
+resource "databricks_scim_user" "admin" {
+  user_name    = "admin@example.com"
+  display_name = "Admin user"
+  set_admin    = true
+  default_roles = []
+}
+
+
+
 

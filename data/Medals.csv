@@ -1,4 +1,4 @@
-Rank,Team_Country,Gold,Silver,Bronze,Total,Rank by Total
+Rank,TeamCountry,Gold,Silver,Bronze,Total,Rank by Total
 1,United States of America,39,41,33,113,1
 2,People's Republic of China,38,32,18,88,2
 3,Japan,27,14,17,58,5
@@ -86,7 +86,7 @@ Rank,Team_Country,Gold,Silver,Bronze,Total,Rank by Total
 85,Finland,0,0,2,2,66
 86,Botswana,0,0,1,1,77
 86,Burkina Faso,0,0,1,1,77
-86,Côte d'Ivoire,0,0,1,1,77
+86,CÃ´te d'Ivoire,0,0,1,1,77
 86,Ghana,0,0,1,1,77
 86,Grenada,0,0,1,1,77
 86,Kuwait,0,0,1,1,77
